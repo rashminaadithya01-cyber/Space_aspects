@@ -1,0 +1,94 @@
+#background-video {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+}
+#welcome{
+    font-size: 200px;
+    color: rgb(255, 255, 255);
+    align-self: center;
+}
+#quote{
+    max-width: max-content;
+    background-color: #000000;
+    font-size: 30px;
+    font-family: "SUSE Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid orange; 
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+      typing 1.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    background: #121212;
+    font-family: 'Arial', sans-serif;
+}
+
+.shadow-dance-text {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+    animation: shadow-dance 2s infinite;
+    text-align: center;
+}
+
+@keyframes shadow-dance {
+    0%, 100% {
+        text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+    }
+    50% {
+        text-shadow: -5px -5px 0 #00d4ff, -10px -10px 0 #ff005e;
+    }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #defa07;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #6e26ea;
+  color: white;
+}
